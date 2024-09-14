@@ -32,7 +32,6 @@ Include screenshots or GIFs of your portfolio website to showcase its design and
 - CSS3 (Bootstrap)
 - JavaScript (jQuery)
 - Font Awesome
-- Netlify (for deployment and form handling)
 
 ## Contributing
 
