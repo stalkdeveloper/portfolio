@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
@@ -6,6 +9,18 @@ body {
 
 .navbar {
     background-color: #343a40;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.navbar.scrolled {
+    background-color: #212529;
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -153,11 +168,13 @@ body {
 
 .footer a {
     color: #e9ecef;
+    text-decoration: none;
 }
 
 .footer a:hover {
     text-decoration: underline;
 }
+
 
 .accordion-button {
     background-color: #f8f9fa;
