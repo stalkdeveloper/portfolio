@@ -3,78 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web & Backend Developer Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .card {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        .contact-form input[type="text"],
-        .contact-form input[type="email"],
-        .contact-form input[type="tel"],
-        .contact-form textarea {
-            border: 1px solid #ced4da;
-            border-radius: 0.25rem;
-            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-            padding: 0.375rem 0.75rem;
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-
-        .contact-form input[type="text"]:focus,
-        .contact-form input[type="email"]:focus,
-        .contact-form input[type="tel"]:focus,
-        .contact-form textarea:focus {
-            border-color: #80bdff;
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-        }
-
-        .contact-form textarea {
-            resize: none; /* Prevent resizing of textarea */
-        }
-
-        .contact-form button[type="submit"] {
-            font-weight: bold;
-        }
-
-    </style>
+    <title>Sunny Kumar - Web & Backend Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Developer Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Sunny Kumar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#service">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#faq">FAQs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -84,98 +37,81 @@
     </nav>
 
     <header class="jumbotron">
-        <div class="container text-center">
-            <h1 class="display-4">Sunny Kumar</h1>
-            <p class="lead">Experienced Web & Backend Developer</p>
-        </div>
-    </header>
-
-    <!-- <section id="about" class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
+            <h1 class="display-4 glow">Sunny Kumar</h1>
+            <p class="lead">Creative Web & Backend Developer with Expertise in Modern Technologies</p>
+            <!-- <a href="https://www.linkedin.com/in/stalkdeveloper/" class="btn btn-outline-light">Connect on LinkedIn</a> -->
+        </div>
+    </header>    
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2 text-center">
+                    <img src="https://avatars.githubusercontent.com/u/91655988?v=4" alt="Profile Picture" class="img-fluid rounded-circle mb-3 mb-md-0" style="max-width: 200px;">
+                </div>
+                <div class="col-md-6 order-md-1">
                     <h2>About Me</h2>
                     <p>
-                        I am a Software Engineer with a master's degree in Software Development. I currently work as a Web & Backend Developer using PHP and Python Frameworks. My passion is creativity with code, where I transform my ideas into amazing solutions.
+                        I am a dedicated Web and Backend Developer with a passion for crafting scalable and efficient applications. With over 2 years of hands-on experience in PHP (Laravel, CodeIgniter, WordPress), Python (Django), and Node.js, I deliver solutions that enhance user experiences and drive business growth.
                     </p>
                     <p>
-                        MCA Completed 2019 - 2022 Anna University College Kongu Engineering College 8.1 CGPA
+                        <strong>Education:</strong>
                         <br>
-                        BCA Completed 2016 - 2019 from Ranchi University Gossner College Ranchi 68%
+                        - Master of Computer Applications (MCA), Anna University, Kongu Engineering College (2019-2022) - 8.1 CGPA
+                        <br>
+                        - Bachelor of Computer Applications (BCA), Ranchi University, Gossner College Ranchi (2016-2019) - 68%
                     </p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="https://avatars.githubusercontent.com/u/91655988?v=4" alt="Profile Picture" class="img-fluid rounded-circle">
+                    <h4>Skills</h4>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">HTML/CSS (90%)</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">JavaScript (80%)</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">PHP (75%)</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">Python (Django) (70%)</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">Node.js (65%)</div>
+                    </div>
+                    <a href="https://www.linkedin.com/in/stalkdeveloper" class="btn btn-primary">Hire Me</a>
                 </div>
             </div>
         </div>
-    </section> -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 order-md-2">
-            <img src="https://avatars.githubusercontent.com/u/91655988?v=4" alt="Profile Picture" class="img-fluid rounded-circle mb-3 mb-md-0">
-          </div>
-          <div class="col-md-6 order-md-1">
-            <h2>About Me</h2>
-            <p>
-              I am a Software Engineer with a master's degree in Software Development. I currently work as a Web & Backend Developer using PHP and Python Frameworks. My passion is creativity with code, where I transform my ideas into amazing solutions.
-            </p>
-            <p>
-              <strong>Education:</strong>
-              <br>
-              - MCA Completed 2019 - 2022, Anna University College Kongu Engineering College (8.1 CGPA)
-              <br>
-              - BCA Completed 2016 - 2019, Ranchi University, Gossner College Ranchi (68%)
-            </p>
-            <h4>Skills</h4>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">HTML/CSS (90%)</div>
-            </div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">JavaScript (80%)</div>
-            </div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">PHP (75%)</div>
-            </div>
-            <a href="#" class="btn btn-primary">Hire Me</a>
-          </div>
-        </div>
-      </div>
     </section>
 
-
-    <section id="portfolio" class="section bg-light">
+    <section id="services" class="section">
         <div class="container">
-            <h2 class="text-center">Portfolio</h2>
+            <h2>Services</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Full-Stack Development">
                         <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of Project 1</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <h5 class="card-title">Full-Stack Development</h5>
+                            <p class="card-text">Specializing in creating robust web applications with PHP (Laravel, CodeIgniter, WordPress), Python (Django), and Node.js. Ensuring high performance and scalability in all projects.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="API Development">
                         <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Description of Project 2</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <h5 class="card-title">API Development</h5>
+                            <p class="card-text">Designing and implementing RESTful APIs and integrating external services to enhance functionality and streamline workflows.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Frontend Development">
                         <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Description of Project 3</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <h5 class="card-title">Frontend Development</h5>
+                            <p class="card-text">Creating modern, responsive designs using HTML, CSS, Bootstrap, and Tailwind CSS. Enhancing user experience with dynamic interfaces using JavaScript and jQuery.</p>
                         </div>
                     </div>
                 </div>
@@ -183,68 +119,151 @@
         </div>
     </section>
 
-    <section id="contact" class="section mb-2">
+    <section id="faq" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            What services do you offer?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I offer a range of services including full-stack web development, API development, and frontend design. My expertise spans various technologies such as PHP (Laravel, CodeIgniter, WordPress), Python (Django), and JavaScript (Node.js). Whether you need a custom-built web application, a responsive website, or integration with external APIs, I can help bring your project to life.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How do you approach project development?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            My approach involves a structured process to ensure the best results. Initially, I work closely with clients to understand their goals and requirements. Next, I create a detailed project plan and design the architecture. Throughout development, I maintain regular communication to provide updates and gather feedback. The process concludes with thorough testing and delivery of the final product.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is your typical project timeline?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The timeline for a project varies based on its complexity and scope. Generally, a small to medium-sized project may take between 4 to 8 weeks from start to finish. For more extensive projects, such as large-scale web applications or systems, the timeline might extend up to several months. I provide a more accurate timeline estimate after the initial consultation and scoping phase.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+           
+
+    <section id="contact" class="section">
         <div class="container">
             <h2 class="text-center">Contact Me</h2>
             <div class="row">
-                <div class="col-lg-6 mx-auto">
+                <div class="col-lg-8 mx-auto">
                     <form id="contact-form" class="contact-form">
-                      <div class="form-group">
-                          <label for="name">Name</label>
-                          <input type="text" id="name" name="name" class="form-control" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="email">Email</label>
-                          <input type="email" id="email" name="email" class="form-control" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="phone">Phone Number</label>
-                          <input type="tel" id="phone" name="phone" class="form-control" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="message">Message</label>
-                          <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                  </form>
+                        <div class="form-group mb-3">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block submitBtn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="footer text-center py-4">
         <div class="container">
             <p>&copy; 2024 Sunny Kumar - Web & Backend Developer</p>
+            <a href="https://www.linkedin.com/in/stalkdeveloper" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    </footer>       
 </body>
 </html>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#contact-form').submit(function(event) {
             event.preventDefault();
-
-            var formData = $(this).serialize();
-
+            $('.form-group').find('.error-message').remove();
+            
+            var formData = new FormData(this);
+            
             $.ajax({
                 type: 'POST',
                 url: 'public/save_contact.php',
                 data: formData,
+                dataType: 'json',
+                contentType: false,
+                processData: false,
                 success: function(response) {
-                    console.log(response);
+                    if (response.status === "success") {
+                        $('#contact-form')[0].reset();
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success!',
+                            text: response.message,
+                            confirmButtonText: 'OK'
+                        });
+                    } else {
+                        if (response.errors) {
+                            for (var field in response.errors) {
+                                if (response.errors.hasOwnProperty(field)) {
+                                    var errorMessages = response.errors[field];
+                                    $('#' + field).after('<div class="error-message alert alert-danger">' + errorMessages.join('<br>') + '</div>');
+                                }
+                            }
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops!',
+                                text: response.message,
+                                confirmButtonText: 'OK'
+                            });
+                        }
+                    }
                 },
                 error: function(xhr, status, error) {
-                    console.error(xhr.responseText);
+                    var errorMessage = 'An unknown error occurred.';
+                    if (xhr.status) {
+                        errorMessage = 'Error ' + xhr.status + ': ' + xhr.statusText;
+                    }
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error!',
+                        text: errorMessage,
+                        confirmButtonText: 'OK'
+                    });
+                    console.log('AJAX request failed.');
+                    console.log('Status: ' + status);
+                    console.log('Error: ' + error);
+                    console.log('Response: ' + xhr.responseText);
                 }
             });
         });
-    });
-</script>
-
+    });                     
+</script>   
